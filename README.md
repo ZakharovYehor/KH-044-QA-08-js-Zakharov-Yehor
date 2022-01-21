@@ -1,1 +1,1 @@
-# KH-044-QA-08-js-Zakharov-Yehor
+# KH-044-QA-08-js-Zakharov-Yehor student
