@@ -10,6 +10,7 @@ const readlinePromise = (question) =>
     });
   });
 
+let totalAge;
 let animalId = 0;
 const inputAnimal = async () => {
   const type = await readlinePromise("Enter type: ");
@@ -52,7 +53,8 @@ function dfs(parents, parentId) {
   return null;
 }
 
-function dfsAge(parents, totalAge) {
+function dfsAge(parents) {
+  totalAge = 0;
   for (let parent of parents) {
     totalAge += parent.age;
     totalAge = dfsAge(parent.children, totalAge);
