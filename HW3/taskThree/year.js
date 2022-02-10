@@ -4,9 +4,9 @@ const readline = require("readline").createInterface({
 });
 
 readline.question("Enter year: ", (year) => {
-  if (year % 4 === 0) {
-    console.log("Leap year");
+  if (year % 4 === 0 && year % 100 === 0 && year % 400 === 0) {
+    console.log(`${year} is leap year`);
   } else {
-    console.log("Not a leap year");
+    console.log(`${year} is not leap year`);
   }
 });
