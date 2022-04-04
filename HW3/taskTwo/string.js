@@ -4,7 +4,6 @@ const readline = require("readline").createInterface({
 });
 
 readline.question("Enter string: ", (str) => {
-  let name = "";
   let symbol = "qwertyuiopasdfghjklzxcvbnm";
   let number = "0123456789";
   let specialSymbol = "(!#$%&'()*+,-./:;<=>?@[]^_`{|}~)";
